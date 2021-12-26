@@ -1,0 +1,308 @@
+:root {
+  --red: #7f1215;
+  --black: #141115;
+  --white: #f7f5fb;
+  --red-link: #b0191a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+}
+
+/* ---- NAVBAR ---- */
+
+header h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #141115;
+  background-image: linear-gradient(90deg, #141115 0%, #272627 100%);
+}
+
+.navbar-brand img {
+  width: 60%;
+  max-width: 120px;
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
+  border: none;
+  transition: all 0.2s;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(0, 0, 0, 0.137);
+}
+
+.fa-bars {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.navbar-nav a {
+  font-weight: 600;
+  padding: 0px 10px;
+  color: rgb(255, 255, 255) !important;
+  text-align: right;
+  margin: 1rem 0;
+}
+
+/* -- EFECTOS NAVBAR -- */
+
+.navbar-brand img {
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.navbar-brand img:hover {
+  transform: rotate(360deg);
+}
+
+.navbar-nav a:hover {
+  color: var(--red-link) !important;
+}
+
+header img {
+  box-shadow: 5px 5px 10px #000000;
+}
+
+/* BANNER 1*/
+
+#banner {
+  background: #141115;
+  background-image: linear-gradient(90deg, #141115 0%, #272627 100%);
+}
+
+.banner-img {
+  border-radius: 30px 5px 30px 5px;
+}
+
+#banner h4,
+#banner h1,
+#banner p,
+#banner h2 {
+  color: #fff;
+}
+
+#presentacion-lista {
+  text-align: justify;
+  color: var(--white);
+}
+
+#presentacion-lista li {
+  margin: 0.5rem 0;
+}
+
+/* WAVE */
+
+.svg-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #141115;
+  background-image: linear-gradient(90deg, #141115 0%, #272627 100%);
+}
+
+.svg-wrapper svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*  ASESORIAS */
+
+#asesorias {
+  background: #f7f5fb;
+}
+
+.asesoria-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h5.card-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#asesorias .card-body {
+  background-color: var(--white);
+}
+
+#asesorias .card-text {
+  padding: 0.5rem 0;
+  margin: 0;
+  width: 100%;
+}
+
+#asesorias .text-border {
+  border-top: 1px solid rgb(175, 175, 175);
+}
+
+#asesorias .wsp-btn {
+  background-color: #25d366;
+}
+
+#asesorias .wsp-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+#asesorias .wsp-icon {
+  width: 2rem;
+  color: #fff;
+}
+
+/*  QUIEN SOY */
+
+#sobre-mi {
+  background: #f7f5fb;
+}
+
+.sobre-mi-img {
+  max-width: 100%;
+}
+
+/*  FORMA DE TRABAJO */
+
+#forma-de-trabajo {
+  background: #141115;
+  background-image: linear-gradient(90deg, #141115 0%, #272627 100%);
+  color: var(--white);
+}
+
+#forma-de-trabajo .list-group .list-group-item {
+  background: #141115;
+  background-image: linear-gradient(90deg, #141115 0%, #272627 100%);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+/*  ARTICULOS */
+
+#articulos {
+  background: #f7f5fb;
+}
+
+#articulos p {
+  line-height: 30px;
+}
+
+#articulos h2 {
+  font-size: 2.2em;
+  color: #141115;
+  font-weight: 900;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.424);
+}
+
+.card {
+  background-color: #dadada;
+}
+
+.imagen-articulo {
+  height: 20vw;
+  object-fit: cover;
+}
+
+#articulos .card a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#articulos .card a:hover {
+  color: #0a7284;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-articulo {
+    height: 50vw;
+    object-fit: cover;
+  }
+}
+
+/* PAGINACION */
+
+.page-link {
+  color: #000;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #0a7284 !important;
+}
+
+a.page-link:hover {
+  color: #0a7284;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #141115;
+}
+
+#footer .svg-wrapper {
+  background: #f7f5fb;
+  background-image: none;
+}
+
+#footer h2 {
+  font-size: 2.2em;
+  color: #f7f5fb;
+  font-weight: 900;
+  text-shadow: none;
+}
+
+#footer hr {
+  background-color: #f7f5fb;
+}
+
+#footer .copyright {
+  color: #f7f5fb;
+}
+
+#footer .copyright a {
+  text-decoration: none;
+  color: var(--red-link);
+  cursor: pointer;
+}
+
+/* EFECTOS FOOTER */
+
+#footer #icon {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#footer #icon:hover {
+  transform: translateY(-10px);
+}
+
+/* PAGE */
+
+.page-img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
