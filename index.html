@@ -7,10 +7,10 @@
     <title>Nicolas Aguirre | Nutricion y Entrenamiento</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/e28f19f2a5.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="./images/logona.png" />
@@ -40,11 +40,9 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 <a class="nav-link" href="#asesorias">Asesorias</a>
                 <a class="nav-link" href="#sobre-mi">Sobre mi</a>
-                <a class="nav-link" href="#articulos">Articulos</a>
-                <a class="nav-link" href="#contacto">Contacto</a>
               </div>
             </div>
           </div>
@@ -74,8 +72,8 @@
           </div>
         </div>
 
-        <div class="col-10 col-sm-8 col-md-5 col-lg-5 p-3">
-          <img src="images/bg.jpg" class="img-fluid mx-auto banner-img" alt="..." />
+        <div class="col-10 col-sm-8 col-md-5 col-lg-5 p-3 d-flex justify-content-center">
+          <img src="images/main.jpeg" class="img-fluid mx-auto banner-img" alt="..." />
         </div>
 
         <div class="svg-wrapper">
@@ -94,27 +92,72 @@
               <h2>Asesorias</h2>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="row my-3">
             <div class="col">
               <div class="card h-100">
-                <img src="./images/food.jpg" class="card-img-top asesoria-img" alt="food" />
                 <div class="card-body">
-                  <h5 class="card-title">ASESORIA NUTRICIONAL ONLINE</h5>
-                  <p class="card-text text-border">Se hara un cuestionario personal inicial</p>
-                  <p class="card-text text-border">
-                    Se ajustaran las calorias y macros ( proteinas, hidratos y grasas) segun los
-                    datos personales
-                  </p>
-                  <p class="card-text text-border">Se realizaran ajustes continuos</p>
-                  <p class="card-text text-border">
-                    El plan nutricional sera totalmente individualizado y adaptado a su contexto y
-                    objetivo sea ganancia de masa muscular o perdida de grasa corporal
-                  </p>
-                  <p class="card-text text-border">Seguimiento y dudas por WHATSAPP</p>
+                  <h5 class="card-title">INFORMACION NUTRICIONAL</h5>
+                  <div class="row text-left informacion-nutricional">
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">
+                        Plan de nutricion y entrenamiento totalmente individualizados, basados en cada
+                        objetivo y contexto.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">Cuestionario y valoracion inicial.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">
+                        Modificaciones mensuales de los planes en caso de ser necesario.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">
+                        Guia de suplementacion en caso de ser necesario.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">
+                        Ajustes de calorias y macronutrientes(proteinas, hidratos y grasas)
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">
+                        Planificacion de todas las variables del entrenamiento.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text">
+                        <img class="check_icon" src="./images/check.svg" alt="check icon">
+                        Control de la tecnica de cada ejercicio por medio de videos.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <p class="card-text"><img class="check_icon" src="./images/check.svg" alt="check icon">Resolución de dudas 12/7 vía WhatsApp.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 p-1 plan">
+                <div class="card-body">
+                  <h5 class="card-title">PLAN MENSUAL</h5>
+                  <h2 class="card-text text-border-top">$3500 Ars.</h2>
+                  <h6 class="card-text text-border-bottom">40 USD.</h3>
                 </div>
                 <div class="card-footer">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Quiero%20informaci%C3%B3n%20sobre%20el%20plan%20de%20nutrici%C3%B3n.%20Mi%20nombre%20es"
+                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Solicito%20información%20sobre%20el%20plan%20Mensual."
                     target="__blank"
                     class="card-link btn btn-lg wsp-btn"
                   >
@@ -125,26 +168,15 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="./images/training.jpg" class="card-img-top asesoria-img" alt="..." />
+              <div class="card h-100 p-1 plan">
                 <div class="card-body">
-                  <h5 class="card-title">PLAN ENTRENAMIENTO ONLINE</h5>
-                  <p class="card-text text-border">Se hara un cuestionario personal inicial</p>
-                  <p class="card-text text-border">
-                    El plan de entrenamiento sera totalmente individualizado y adaptado a su
-                    contexto y objetivo
-                  </p>
-                  <p class="card-text text-border">
-                    Planificacion del entrenamiento controlando sus variables
-                  </p>
-                  <p class="card-text text-border">
-                    Ajustes continuos del plan para seguir mejorando
-                  </p>
-                  <p class="card-text text-border">Seguimiento y dudas por WHATSAPP</p>
+                  <h5 class="card-title">PLAN TRIMESTRAL</h5>
+                  <h2 class="card-text text-border-top">$9600 Ars.</h2>
+                  <h6 class="card-text text-border-bottom">100 USD.</h3>
                 </div>
                 <div class="card-footer">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Quiero%20informaci%C3%B3n%20sobre%20el%20plan%20de%20entrenamiento.%20Mi%20nombre%20es"
+                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Solicito%20información%20sobre%20el%20plan%20Trimestral."
                     target="__blank"
                     class="card-link btn btn-lg wsp-btn"
                   >
@@ -155,54 +187,15 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
-                <img src="./images/food+weight.jpg" class="card-img-top asesoria-img" alt="..." />
+              <div class="card h-100 p-1 plan">
                 <div class="card-body">
-                  <h5 class="card-title">NUTRICION + ENTRENAMIENTO</h5>
-                  <p class="card-text text-border">Se hara un cuestionario personal inicial</p>
-                  <p class="card-text text-border">
-                    Plan totalmente individualizado y adaptado a su contexto y objetivo sea ganancia
-                    de masa muscular o perdida de grasa corporal
-                  </p>
-                  <p class="card-text text-border">Ajustes continuos de nutricion</p>
-                  <p class="card-text text-border">Ajustes continuos del entrenamiento</p>
-                  <p class="card-text text-border">Ajustes de las variables del entrenamiento</p>
-                  <p class="card-text text-border">
-                    Ajustes de calorias y macros (proteinas, hidratos y grasas)
-                  </p>
-                  <p class="card-text text-border">Seguimiento y dudas por WHATSAPP</p>
+                  <h5 class="card-title">PLAN DE 6 MESES</h5>
+                  <h2 class="card-text text-border-top">$18000 Ars.</h2>
+                  <h6 class="card-text text-border-bottom">150 USD.</h3>
                 </div>
                 <div class="card-footer">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Quiero%20informaci%C3%B3n%20sobre%20el%20plan%20de%20nutricion%20+%20entrenamiento.%20Mi%20nombre%20es"
-                    target="__blank"
-                    class="card-link btn btn-lg wsp-btn"
-                  >
-                    Solicitar informacion
-                    <img class="wsp-icon" src="./images/wsp.png" alt="wsp icon" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="./images/food heath.jpg" class="card-img-top asesoria-img" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">PLAN SALUD</h5>
-                  <p class="card-text text-border">Se hara un cuestionario individual inicial</p>
-                  <p class="card-text text-border">Plan individualizado y adaptado a su contexto</p>
-                  <p class="card-text text-border">
-                    Plan llevado a cabo para hacerse en cualquier parte
-                  </p>
-                  <p class="card-text text-border">
-                    Este plan es para quien simplemente quiera mejorar su salud y sentirse bien
-                    consigo mismo y mejorar su calidad de vida mas alla de la estetica
-                  </p>
-                  <p class="card-text text-border">Seguimiento y dudas por WHATSAPP</p>
-                </div>
-                <div class="card-footer">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Quiero%20informaci%C3%B3n%20sobre%20el%20plan%20de%20salud.%20Mi%20nombre%20es"
+                    href="https://api.whatsapp.com/send?phone=+5491144088053&text=Solicito%20información%20sobre%20el%20plan%20de%206%20meses."
                     target="__blank"
                     class="card-link btn btn-lg wsp-btn"
                   >
@@ -291,13 +284,11 @@
               </p>
             </div>
             <div class="col-12 col-lg-4 d-flex align-self-center">
-              <img src="../images/quien-soy.jpg" alt="sobre mi" class="img-fluid sobre-mi-img" />
+              <img src="./images/quien-soy.jpg" alt="sobre mi" class="img-fluid sobre-mi-img" />
             </div>
           </div>
         </div>
       </section>
-
-      <!-- ARTICULOS -->
 
       <!-- FOOTER -->
 
@@ -315,6 +306,9 @@
           <a href="https://www.instagram.com/nicoaguirre.fit/" target="__blank"
             ><img src="images/instagram.png" alt="" class="img-fluid" id="icon"
           /></a>
+          <a href="https://www.tiktok.com/@nicoaguirre.fit?is_from_webapp=1&sender_device=pc/" target="__blank"
+            ><img src="images/tiktok.png" alt="" class="img-fluid" id="icon"
+          /></a>
         </div>
 
         <div class="col-12">
@@ -322,7 +316,9 @@
           <p class="text-center copyright">
             Website created by
             <span>
-              <a href="https://github.com/TheLaucha" target="_blank"> Lautaro Espinillo</a>
+              <a href="https://thelaucha.github.io/lautaro_espinillo_portfolio/" target="_blank">
+                Lautaro Espinillo</a
+              >
             </span>
           </p>
         </div>
@@ -330,5 +326,6 @@
     </div>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e28f19f2a5.js" crossorigin="anonymous"></script>
   </body>
 </html>
